@@ -1,2 +1,2 @@
-# mini-projeto calculadora
+# Mini-projeto Calculadora
  Projeto simples de calculadora
