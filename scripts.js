@@ -1,5 +1,28 @@
-function insert(num) {
-    document.querySelector('div#resultado').innerHTML = num
+function insert(op) {
+    
+    var ope = document.querySelector('div#resultado').innerHTML;
+
+    document.querySelector('div#resultado').innerHTML = ope + op
+}
+
+function clean() {
+    document.querySelector('div#resultado').innerHTML = ''
+}
+
+function calcular() {
+    var resultado = document.querySelector('div#resultado').innerHTML
+    
+    if(resultado) {
+        document.querySelector('div#resultado').innerHTML = eval(resultado)
+    } else {
+        document.querySelector('div#resultado').innerHTML = 'ERRO'
+    }
+}
+
+function back() {
+    resultado = document.querySelector('div#resultado').innerHTML
+
+    document.querySelector('div#resultado').innerHTML = resultado.substring(0,resultado.length -1)
 }
 
 function escuro() {
