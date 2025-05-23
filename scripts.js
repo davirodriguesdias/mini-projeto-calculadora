@@ -1,8 +1,6 @@
 function insert(op) {
-    
-    var ope = document.querySelector('div#resultado').innerHTML;
 
-    document.querySelector('div#resultado').innerHTML = ope + op
+    document.querySelector('div#resultado').innerHTML += op
 }
 
 function clean() {
@@ -12,11 +10,8 @@ function clean() {
 function calcular() {
     var resultado = document.querySelector('div#resultado').innerHTML
     
-    if(resultado) {
         document.querySelector('div#resultado').innerHTML = eval(resultado)
-    } else {
-        document.querySelector('div#resultado').innerHTML = 'ERRO'
-    }
+
 }
 
 function back() {
